@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kasir</title>
+</head>
+<body style="font-family: Arial; background-color: #f4f4f4;">
+
+    <h1 style="color: green;">Dashboard Kasir 🛒</h1>
+    <p>Selamat datang di aplikasi kasir</p>
+
+    <hr>
+
+    <a href="{% url 'tambah' %}">
+    <button>Tambah Barang</button>
+</a>
+
+<a href="{% url 'transaksi' %}">
+    <button>Lihat Transaksi</button>
+</a>
+<a href="{% url 'lihat' %}">
+    <button>Lihat Barang</button>
+</a>
+</body>
+</html>

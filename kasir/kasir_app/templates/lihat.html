@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Barang</title>
+</head>
+<body>
+
+<h2>Daftar Barang</h2>
+
+<table border="1">
+    <tr>
+        <th>Nama</th>
+        <th>Harga</th>
+        <th>Stok</th>
+    </tr>
+
+    {% for item in data %}
+    <tr>
+        <td>{{ item.nama }}</td>
+        <td>{{ item.harga }}</td>
+        <td>{{ item.stok }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<br>
+<a href="{% url 'home' %}">Kembali</a>
+
+</body>
+</html>
+<h2>Daftar Barang</h2>
+
+<table border="1">
+    <tr>
+        <th>Nama</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+    </tr>
+
+    {% for item in data %}
+    <tr>
+        <td>{{ item.nama }}</td>
+        <td>{{ item.harga }}</td>
+        <td>{{ item.jumlah }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="/">Kembali</a>

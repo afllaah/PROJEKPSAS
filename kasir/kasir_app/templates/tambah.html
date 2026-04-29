@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Barang</title>
+</head>
+<body>
+
+    <h1>Halaman Tambah Barang</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label>Nama Barang:</label><br>
+        <input type="text" name="nama"><br><br>
+
+        <label>Harga:</label><br>
+        <input type="number" name="harga"><br><br>
+
+        <label>Jumlah:</label><br>
+        <input type="number" name="jumlah"><br><br>
+
+        <button type="submit">Simpan</button>
+    </form>
+
+</body>
+</html>
